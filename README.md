@@ -1,8 +1,13 @@
-# KiCAD Directory Structure
+# 18650 Battery Shield Keep Alive Circuit
 
-Directory structure for starting new projects in KiCAD. Based off Hackaday article: https://hackaday.com/2017/05/18/kicad-best-practises-library-management/
+The following circuit was designed to keep the 5V rail of a 18650 Battery Shield active even with no load attached. A comparator will "press" the tactile switch when the 5V rail goes below the 3V3 rail.
 
-## Directory Outline
-- [`~/pcb/`](pcb) is for KiCAD desinge files. When starting a new KiCAD project in this directory be sure to uncheck *Create a new direcotry for the project* in the **Create New Project** window.
-- [`~/firmware/`](firmware) is for firmware souce code and binaries.
-- [`~/enclosure/`](enclosure) is for mechanical CAD design files for the encloser or box. Create seperate directories for `.stl` or other files for 3d printing for easy accesss.
+![Schematic](pcb/images/18650_keep_alive_schem.png)
+
+The circuit is built on a small one sided PCB that is attached to the battery shield using hot glue. Electrical connections are made using multi-strand wire.
+
+![Keep Alive Installed](pcb/images/18650_keep_alive.png)
+
+Below is a photo of an unmodified 18650 Battery Shield. They may use keywords such as ESP32 or Raspberry Pi battery shield.
+
+![18650 Battery Shield](pcb/images/18650_shield_new.png)
